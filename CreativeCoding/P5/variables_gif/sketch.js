@@ -5,7 +5,7 @@ function preload (){
 }
 
 function setup() {
-  createCanvas(300, 300);
+  createCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
@@ -13,11 +13,18 @@ function draw() {
   strokeWeight(0);
 
   var num = 15;
-  var sideLen = 300;
+  var sideLen = windowWidth/num;
+
+  translate (-150,  -150)
 
   for (var y = 0; y < windowWidth; y = y + sideLen) {
     for (var x = 0; x < windowWidth; x = x + sideLen) {
       image(gif, x, y, windowWidth/num);
     }
   }
+}
+
+function windowResized () {
+  resizeCanvas (windowWidth, windowHeight)
+
 }
