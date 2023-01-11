@@ -1,7 +1,7 @@
 let gif;
 
 function preload (){
-  image = loadImage ('assets/backgroundimage.png')
+  bg = loadImage ('assets/backgroundimage.png')
 }
 
 function setup() {
@@ -19,7 +19,7 @@ function draw() {
 
   for (var y = 0; y < 2 * windowWidth; y = y + sideLen) {
     for (var x = 0; x < 2 * windowWidth; x = x + sideLen) {
-      image(image, x, y, windowWidth/num, windowWidth/num);
+      image(bg, x, y, windowWidth/num, windowWidth/num);
     }
   }
 }
