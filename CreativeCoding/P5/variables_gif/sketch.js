@@ -5,7 +5,7 @@ function preload (){
 }
 
 function setup() {
-  createCanvas(windowWidth, windowWidth);
+  createCanvas(300, 300);
 }
 
 function draw() {
@@ -13,7 +13,7 @@ function draw() {
   strokeWeight(0);
 
   var num = 15;
-  var sideLen = windowWidth / num;
+  var sideLen = 300;
 
   for (var y = 0; y < windowWidth; y = y + sideLen) {
     for (var x = 0; x < windowWidth; x = x + sideLen) {
