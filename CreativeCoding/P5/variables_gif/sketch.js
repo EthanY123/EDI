@@ -17,8 +17,8 @@ function draw() {
 
   translate (-150,  -150)
 
-  for (var y = 0; y < windowWidth; y = y + sideLen) {
-    for (var x = 0; x < windowWidth; x = x + sideLen) {
+  for (var y = 0; y < 2 * windowWidth; y = y + sideLen) {
+    for (var x = 0; x < 2 * windowWidth; x = x + sideLen) {
       image(gif, x, y, windowWidth/num);
     }
   }
