@@ -1,11 +1,11 @@
 let gif;
 
 function preload (){
-  gif = loadImage ('assets/backgroundimage.png')
+  image = loadImage ('assets/backgroundimage.png')
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth, windowWidth);
 }
 
 function draw() {
@@ -19,7 +19,7 @@ function draw() {
 
   for (var y = 0; y < 2 * windowWidth; y = y + sideLen) {
     for (var x = 0; x < 2 * windowWidth; x = x + sideLen) {
-      image(gif, x, y, windowWidth/num);
+      image(image, x, y, windowWidth/num, windowWidth/num);
     }
   }
 }
